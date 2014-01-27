@@ -1,0 +1,347 @@
+1	#include <stdio.h>
+2	#include "answer02.h"
+3	
+4	int main(int argc, char * * argv)
+5	{
+6	    char* test1 = "Hello World!";
+7	    char* test2 = "\n\vhell-1233";
+8	    char* test3 = "World";
+9	    char buffer[50];
+10	    printf("Hello World!\n");
+Breakpoint 1 at 0x40093f: file answer02.c, line 95.
+11	   // Create your test-cases here, good luck!
+12	    printf("length = %zu\n",my_strlen(test1));
+13	    printf("cnt = %d\n",my_countchar(test1,'o'));
+14	    printf("%s\n",my_strchr(test1,'o'));
+15	    printf("%s\n",my_strrchr(test1,'o'));
+16	    printf("%s\n",my_strstr(test1,test3));
+17	    printf("%s\n",my_strcpy(buffer,test3));
+18	    printf("%s\n",my_strcat(buffer,test1));
+19	    printf("num = %d\n",my_atoi(test2));
+20	    return 0;
+Starting program: /home/shay/a/chen747/ece264/ece264/PA02/pa02 
+
+Breakpoint 1, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:95
+95	    if(str[i] == '-'){
+Missing separate debuginfos, use: debuginfo-install glibc-2.12-1.132.el6.x86_64
+90	  int ret = 0;
+91	  while(i < my_strlen(str)){   
+92	    if(my_isspace(*str) == 1){
+93	      i++;
+94	    }
+95	    if(str[i] == '-'){
+96	      neg = 1;
+97	      i++;
+98	    }
+99	    if(str[i] > -1 && str[i] < 10){
+$1 = 11 '\v'
+$2 = 1
+The program being debugged has been started already.
+Start it from the beginning? (y or n) Program not restarted.
+Continuing.
+
+Breakpoint 1, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:95
+95	    if(str[i] == '-'){
+$3 = 2
+$4 = 104 'h'
+Continuing.
+
+Breakpoint 1, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:95
+95	    if(str[i] == '-'){
+$5 = 101 'e'
+Continuing.
+
+Breakpoint 1, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:95
+95	    if(str[i] == '-'){
+Continuing.
+
+Breakpoint 1, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:95
+95	    if(str[i] == '-'){
+Continuing.
+
+Breakpoint 1, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:95
+95	    if(str[i] == '-'){
+Continuing.
+
+Breakpoint 1, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:95
+95	    if(str[i] == '-'){
+$6 = 50 '2'
+$7 = 1
+$8 = 0
+Deleted breakpoint 1 
+Breakpoint 2 at 0x40095a: file answer02.c, line 99.
+Breakpoint 3 at 0x4009c0: file answer02.c, line 103.
+No breakpoint at this line.
+Note: breakpoint 2 also set at pc 0x40095a.
+Breakpoint 4 at 0x40095a: file answer02.c, line 99.
+Note: breakpoint 3 also set at pc 0x4009c0.
+Breakpoint 5 at 0x4009c0: file answer02.c, line 103.
+The program being debugged has been started already.
+Start it from the beginning? (y or n) 
+Starting program: /home/shay/a/chen747/ece264/ece264/PA02/pa02 
+
+Breakpoint 2, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:99
+99	    if(str[i] > -1 && str[i] < 10){
+$9 = 1
+Continuing.
+
+Breakpoint 2, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:99
+99	    if(str[i] > -1 && str[i] < 10){
+$10 = 2
+Continuing.
+
+Breakpoint 2, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:99
+99	    if(str[i] > -1 && str[i] < 10){
+Continuing.
+
+Breakpoint 2, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:99
+99	    if(str[i] > -1 && str[i] < 10){
+Continuing.
+
+Breakpoint 2, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:99
+99	    if(str[i] > -1 && str[i] < 10){
+Continuing.
+
+Breakpoint 2, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:99
+99	    if(str[i] > -1 && str[i] < 10){
+Continuing.
+
+Breakpoint 2, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:99
+99	    if(str[i] > -1 && str[i] < 10){
+Continuing.
+
+Breakpoint 2, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:99
+99	    if(str[i] > -1 && str[i] < 10){
+Continuing.
+
+Breakpoint 2, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:99
+99	    if(str[i] > -1 && str[i] < 10){
+Continuing.
+
+Breakpoint 2, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:99
+99	    if(str[i] > -1 && str[i] < 10){
+$11 = 11
+$12 = 0
+$13 = 0 '\000'
+A debugging session is active.
+
+	Inferior 1 [process 27324] will be killed.
+
+Quit anyway? (y or n) Breakpoint 1 at 0x4009af: file answer02.c, line 103.
+Starting program: /home/shay/a/chen747/ece264/ece264/PA02/pa02 
+
+Breakpoint 1, my_atoi (str=0x400ad5 "\n\vhell-1233") at answer02.c:103
+103	      i++;
+Missing separate debuginfos, use: debuginfo-install glibc-2.12-1.132.el6.x86_64
+$1 = 11
+A debugging session is active.
+
+	Inferior 1 [process 27429] will be killed.
+
+Quit anyway? (y or n) Breakpoint 1 at 0x4009b3: file answer02.c, line 101.
+Starting program: /home/shay/a/chen747/ece264/ece264/PA02/pa02 
+
+Program exited normally.
+Missing separate debuginfos, use: debuginfo-install glibc-2.12-1.132.el6.x86_64
+Breakpoint 2 at 0x40091f: file answer02.c, line 91.
+Starting program: /home/shay/a/chen747/ece264/ece264/PA02/pa02 
+
+Breakpoint 2, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:91
+91	  int len = my_strlen(str);
+$1 = 32767
+Deleted breakpoint 2 
+Breakpoint 3 at 0x40092e: file answer02.c, line 92.
+The program being debugged has been started already.
+Start it from the beginning? (y or n) 
+Starting program: /home/shay/a/chen747/ece264/ece264/PA02/pa02 
+
+Breakpoint 3, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:92
+92	  while(i < len){   
+$2 = 11
+$3 = 0
+The program being debugged has been started already.
+Start it from the beginning? (y or n) Program not restarted.
+Undefined command: "pi".  Try "help".
+$4 = 0
+Continuing.
+
+Program exited normally.
+Breakpoint 4 at 0x400933: file answer02.c, line 93.
+Deleted breakpoint 3 
+Note: breakpoint 4 also set at pc 0x400933.
+Breakpoint 5 at 0x400933: file answer02.c, line 93.
+Starting program: /home/shay/a/chen747/ece264/ece264/PA02/pa02 
+
+Breakpoint 4, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:93
+93	    if(my_isspace(*str) == 1){
+$5 = 0
+Continuing.
+
+Breakpoint 4, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:93
+93	    if(my_isspace(*str) == 1){
+$6 = 1
+$7 = 0
+Continuing.
+
+Breakpoint 4, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:93
+93	    if(my_isspace(*str) == 1){
+$8 = 104 'h'
+Continuing.
+
+Breakpoint 4, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:93
+93	    if(my_isspace(*str) == 1){
+$9 = 101 'e'
+Continuing.
+
+Breakpoint 4, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:93
+93	    if(my_isspace(*str) == 1){
+$10 = 108 'l'
+Continuing.
+
+Breakpoint 4, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:93
+93	    if(my_isspace(*str) == 1){
+$11 = 108 'l'
+Continuing.
+
+Breakpoint 4, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:93
+93	    if(my_isspace(*str) == 1){
+$12 = 45 '-'
+$13 = 0
+Continuing.
+
+Breakpoint 4, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:93
+93	    if(my_isspace(*str) == 1){
+$14 = 0
+$15 = 49 '1'
+$16 = 7
+No source file named answer01.c.
+Make breakpoint pending on future shared library load? (y or [n]) Note: breakpoint 1 also set at pc 0x4009b3.
+Breakpoint 6 at 0x4009b3: file answer02.c, line 101.
+$17 = 0
+$18 = 7
+$19 = 0
+Continuing.
+
+Breakpoint 4, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:93
+93	    if(my_isspace(*str) == 1){
+$20 = 0
+$21 = 50 '2'
+Breakpoint 7 at 0x40096c: file answer02.c, line 98.
+Breakpoint 8 at 0x40098c: file answer02.c, line 99.
+Breakpoint 9 at 0x40099b: file answer02.c, line 100.
+Continuing.
+
+Breakpoint 4, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:93
+93	    if(my_isspace(*str) == 1){
+$22 = 51 '3'
+Continuing.
+
+Breakpoint 4, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:93
+93	    if(my_isspace(*str) == 1){
+Deleted breakpoints 4 5 
+A debugging session is active.
+
+	Inferior 1 [process 27630] will be killed.
+
+Quit anyway? (y or n) Breakpoint 1 at 0x40096c: file answer02.c, line 98.
+Breakpoint 2 at 0x40098c: file answer02.c, line 99.
+Breakpoint 3 at 0x40099b: file answer02.c, line 100.
+Breakpoint 4 at 0x4009b3: file answer02.c, line 101.
+Breakpoint 5 at 0x4009b9: file answer02.c, line 102.
+Starting program: /home/shay/a/chen747/ece264/ece264/PA02/pa02 
+
+Program exited normally.
+Missing separate debuginfos, use: debuginfo-install glibc-2.12-1.132.el6.x86_64
+Breakpoint 6 at 0x40092e: file answer02.c, line 92.
+Starting program: /home/shay/a/chen747/ece264/ece264/PA02/pa02 
+
+Breakpoint 6, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:92
+92	  while(i < len){   
+$1 = 0
+$2 = 11
+No symbol "srt" in current context.
+$3 = 10 '\n'
+Continuing.
+
+Program exited normally.
+Deleted breakpoint 6 
+Breakpoint 7 at 0x40091f: file answer02.c, line 91.
+The program is not being run.
+Starting program: /home/shay/a/chen747/ece264/ece264/PA02/pa02 
+
+Breakpoint 7, my_atoi (str=0x400ae5 "\n\vhell-1233") at answer02.c:91
+91	  int len = my_strlen(str);
+$4 = 0
+Continuing.
+
+Program exited normally.
+No symbol "i" in current context.
+Breakpoint 1 at 0x40099e: file answer02.c, line 102.
+Starting program: /home/shay/a/chen747/ece264/ece264/PA02/pa02 
+
+Breakpoint 1, my_atoi (str=0x400ab5 "\n\vhell-1233") at answer02.c:103
+103	  if (neg == 1){
+Missing separate debuginfos, use: debuginfo-install glibc-2.12-1.132.el6.x86_64
+Deleted breakpoint 1 
+A debugging session is active.
+
+	Inferior 1 [process 28057] will be killed.
+
+Quit anyway? (y or n) Can't find member of namespace, class, struct, or union named "answer02.c"
+Hint: try 'answer02.c 101<TAB> or 'answer02.c 101<ESC-?>
+(Note leading single quote.)
+Make breakpoint pending on future shared library load? (y or [n]) Breakpoint 1 at 0x400992: file answer02.c, line 101.
+Starting program: /home/shay/a/chen747/ece264/ece264/PA02/pa02 
+
+Breakpoint 1, my_atoi (str=0x400ab5 "\n\vhell-1233") at answer02.c:101
+101	    i++;
+Missing separate debuginfos, use: debuginfo-install glibc-2.12-1.132.el6.x86_64
+$1 = 0
+Continuing.
+
+Breakpoint 1, my_atoi (str=0x400ab5 "\n\vhell-1233") at answer02.c:101
+101	    i++;
+$2 = 11 '\v'
+Continuing.
+
+Breakpoint 1, my_atoi (str=0x400ab5 "\n\vhell-1233") at answer02.c:101
+101	    i++;
+$3 = 104 'h'
+Continuing.
+
+Breakpoint 1, my_atoi (str=0x400ab5 "\n\vhell-1233") at answer02.c:101
+101	    i++;
+$4 = 101 'e'
+Continuing.
+
+Breakpoint 1, my_atoi (str=0x400ab5 "\n\vhell-1233") at answer02.c:101
+101	    i++;
+$5 = 108 'l'
+Continuing.
+
+Breakpoint 1, my_atoi (str=0x400ab5 "\n\vhell-1233") at answer02.c:101
+101	    i++;
+$6 = 108 'l'
+Continuing.
+
+Breakpoint 1, my_atoi (str=0x400ab5 "\n\vhell-1233") at answer02.c:101
+101	    i++;
+$7 = 45 '-'
+$8 = 1
+$9 = 0
+Continuing.
+
+Breakpoint 1, my_atoi (str=0x400ab5 "\n\vhell-1233") at answer02.c:101
+101	    i++;
+$10 = 1
+Continuing.
+
+Breakpoint 1, my_atoi (str=0x400ab5 "\n\vhell-1233") at answer02.c:101
+101	    i++;
+$11 = 13
+$12 = 51 '3'
+A debugging session is active.
+
+	Inferior 1 [process 28123] will be killed.
+
+Quit anyway? (y or n) 

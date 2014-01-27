@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include "answer02.h"
+
+int main(int argc, char * * argv)
+{
+    char* test1 = "Hello World!";
+    char* test2 = "/n/vhell-1233";
+    char* test3 = "World";
+    char buffer[50];
+    printf("Hello World!\n");
+   // Create your test-cases here, good luck!
+    printf("length = %d/n",my_strlen(test1));
+    printf("cnt = %d/n",my_countchar(test1,'o'));
+    printf("%s/n",my_strchr(test1,'o'));
+    printf("%s/n",my_strrchr(test1,'o'));
+    printf("%s/n",my_strstr(test1,test3));
+    printf("%s/n",my_strcpy(buffer,test3));
+    printf("%s/n",my_strcat(dest,test1));
+    printf("num = %d/n",my_atoi(test2));
+
+   
+}

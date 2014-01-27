@@ -1,0 +1,111 @@
+#include <stdlib.h>
+#include <answer02.h>
+size_t my_strlen(const char * str){
+  int len == 0;
+  while(str[len] != '\0'){
+    len++;
+  }
+  return len;
+}
+
+int my_countchar(const char * str, char ch){
+  int i;
+  int cnt = 0;
+  for(i = 0;i < my_strlen(str);i++){
+    if (str[i] == ch){
+      cnt++;
+    }
+  }
+  return cnt;
+}
+
+char *my_strchr(const char * str, int ch){
+  int i;
+  for(i = 0;i < my_strlen(str);i++){
+    if (*str[i] == ch){
+      return str + i;
+  }
+  return null;
+}
+
+char * my_strrchr(const char * str, int ch){
+  int i;
+  char* pointer;
+  pointer = null;
+  for(i = 0;i < my_strlen(str);i++){
+    if (str[i] == ch){
+      pointer =  str + i;
+  }
+  return pointer;
+}
+char * my_strstr(const char * haystack, const char * needle){
+  int len = my_strlen(needle);
+  int i;
+  int j;
+  if(len == 0){
+    return haystack;
+  }
+  for(i=0;i< (my_strlen(haystack)- len);i++){
+    for(j = 0;j < len;j++){
+      if(haystack[i+j] != needle[j]){
+	j = j + len;
+      }else if(j == len -1){
+	return haystack;
+      }
+    }
+  }
+  return null;
+}
+
+char * my_strcpy(char * dest, const char * src){
+  int i;
+  for(i = 0;i <= my_strlen(src);i++){
+    dest[i] = src[i]; 
+  }
+  return dest;
+}
+
+char * my_strcat(char * dest, const char * src){
+  int i = 0;
+  while(dest[i] != '/0'){
+    i++;
+  }
+  return my_strcpy(dest+i,src);
+}
+
+
+int my_isspace(int ch){
+  if((ch > 8 && ch <14)|| ch == 32){
+    return 1;
+  }
+  return 0;
+}
+
+int my_atoi(const char * str){
+  int i = 0;
+  int neg = 0;
+  int ret = 0;
+  while(i < my_strlen(str)){   
+    if(my_isspace(*str) == 1){
+      i++;
+    }
+    if(str[i] == '-'){
+      neg = 1;
+      i++;
+    }
+    if(srt[i] > -1 && srt[i] < 10){
+      ret = ret * 10;
+      ret = ret + str[i] - '0';
+      i++;
+    }
+  }
+  if (neg == 1){
+    ret = ret * -1;
+  }
+  return ret;
+  
+}
+
+
+
+
