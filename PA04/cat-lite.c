@@ -21,7 +21,11 @@ int printfile(const char* filename, FILE* fout){
   if (fin == NULL) return 0;
   int ch;
   while ((ch = fgetc(fin)) != EOF){
-    printf("%c",ch);
+    fputc(ch,fout);
+  }
+  if (strcmp(filename,"-")!= 0) 
+  {
+    fclose(fin);
   }
   return 1;
 }
@@ -39,7 +43,7 @@ int main(int argc, char** argv)
     FILE *fin = stdin;
     int ch;
     while ((ch = fgetc(fin)) != EOF){
-    printf("%c",ch);
+    fputc(ch,stdout);
     }
     return EXIT_SUCCESS;
   }
