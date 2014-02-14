@@ -1,0 +1,22 @@
+warning: Source file is more recent than executable.
+23	    fputc(ch,fout);
+24	  }
+25	  if (strcmp(filename,"-")!= 0)
+26	  {
+27	    fclose(fin);
+28	  }
+29	  return 1;
+30	}
+31	
+32	int main(int argc, char** argv)
+Breakpoint 1 at 0x400784: file cat-lite.c, line 29.
+Starting program: /home/shay/a/chen747/ece264/ece264/PA04/cat-lite 
+
+Breakpoint 1, main (argc=1, argv=0x7fffffffe5a8) at cat-lite.c:32
+32	int main(int argc, char** argv)
+Missing separate debuginfos, use: debuginfo-install glibc-2.12-1.132.el6.x86_64
+No symbol "fin" in current context.
+Continuing.
+
+Program exited normally.
+The program is not being run.

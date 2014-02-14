@@ -2,16 +2,15 @@
 #include <stdlib.h>
 #include <string.h>
 void help_message(){
-  printf("</help-message>\n"
+  printf(
          "Usage: cat-lite [--help] [FILE]...\n"
          "With no FILE, or when FILE is -, read standard input.\n"
          "\n"
          "Examples:\n"
-           "cat-lite README   Print the file README to standard output.\n"
-           "cat-lite f - g    Print f's contents, then standard input,\n" 
+           "cat-lite README Print the file README to standard output.\n"
+           "cat-lite f - g Print f's contents, then standard input,\n"
                              "then g's contents.\n"
-	 "cat-lite          Copy standard input to standard output.\n"
-         "</help-message>\n");
+"cat-lite Copy standard input to standard output.\n");
 }
 
 int printfile(const char* filename, FILE* fout){
@@ -23,7 +22,7 @@ int printfile(const char* filename, FILE* fout){
   while ((ch = fgetc(fin)) != EOF){
     fputc(ch,fout);
   }
-  if (strcmp(filename,"-")!= 0) 
+  if (strcmp(filename,"-")!= 0)
   {
     fclose(fin);
   }
