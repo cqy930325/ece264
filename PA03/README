@@ -127,7 +127,7 @@ for each character in 'str' {
 }
 
 // Create the return array
-char * * strArr = malloc((N+1) * sizeof(char *));
+char * * = malloc((N+1) * sizeof(char *));
 
 Before proceeding, TEST YOUR CODE, to make sure it works perfectly so
 far.
